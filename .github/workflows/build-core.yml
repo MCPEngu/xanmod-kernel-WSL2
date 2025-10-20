@@ -40,6 +40,8 @@ jobs:
             image-name: bzImage-skylake
           - arch: MZEN3
             image-name: bzImage-zen3
+          - arch: MZEN4
+            image-name: bzImage-zen4
 
     steps:
       - uses: actions/checkout@main
@@ -180,7 +182,8 @@ jobs:
 
             * `bzImage-x64v{2,3}` for generic-x86_64-v{2,3}
             * `bzImage-skylake` for intel skylake
-            * `bzImage-zen3` for AMD Zen3/Zen4
+            * `bzImage-zen3` for AMD Zen3
+            * `bzImage-zen4` for AMD Zen4
 
             To check supported x86_64 level on your machine, see [how to check supported x86_64 level of the hardware](https://unix.stackexchange.com/questions/631217/how-do-i-check-if-my-cpu-supports-x86-64-v2?msclkid=42ca61e9aa7111ecbcab7bb1a4204357).
 
